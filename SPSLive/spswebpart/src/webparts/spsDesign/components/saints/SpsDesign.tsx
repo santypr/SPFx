@@ -57,7 +57,10 @@ const SaintList =  (props: IListProps) => {
           <div>Class</div>
           <div>Strength</div>
           <div></div>
-          {/* <div><Checkbox label="Unchecked checkbox (uncontrolled)" /></div> */}
+          {/* 
+            Descomentar para mostrar cómo integrar controles de Fluent UI dentro de SPFx
+            <div><Checkbox label="Unchecked checkbox (uncontrolled)" /></div> 
+          */}
         </li>
 
         {props.saints.map((item, index) => {
