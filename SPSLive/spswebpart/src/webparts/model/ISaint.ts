@@ -18,7 +18,8 @@ export interface ISaints {
     saints: ISaintProps[];
 }
 
-export var saintsList: ISaints = {"saints": [
+export var saintsList: ISaints = 
+{"saints": [
     {
         "id": 1, 
         "strength": 18,  
