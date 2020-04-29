@@ -103,7 +103,30 @@ export default class SpsDesignWebPart extends BaseClientSideWebPart<ISpsDesignWe
               ]
             }
           ]
+        },
+        {
+          header: {
+            description: strings.PropertyPaneDescription
+          },
+          displayGroupsAsAccordion: true,
+          groups: [
+            {
+              groupName: strings.SettingsGroupName,
+              isCollapsed: true,
+              groupFields: [
+                PropertyPaneDropdown('list', {
+                  label: strings.ListsFieldLabel,
+                  options: [
+                    {key: 'sharedDocuments', text: 'Shared Documents'},
+                    {key: 'myDocuments', text: 'My Documents'}
+                  ],
+                  selectedKey: 'sharedDocuments'
+                }),
+              ]
+            }
+          ]
         }
+
       ]
     };
   }
